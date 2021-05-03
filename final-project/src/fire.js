@@ -3,6 +3,7 @@ import Firebase from 'firebase'
 var firebaseConfig = {
     apiKey: "AIzaSyDQ9fBNst3TX337YQI0hV4CSfaUex9NHAM",
     authDomain: "authapp-2e34c.firebaseapp.com",
+    databaseURL: "https://authapp-2e34c-default-rtdb.firebaseio.com/",
     projectId: "authapp-2e34c",
     storageBucket: "authapp-2e34c.appspot.com",
     messagingSenderId: "31535714740",
