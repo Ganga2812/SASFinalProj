@@ -27,7 +27,7 @@ function getData() {
 }
 
 const info = [] = getData();
-const a = info.vehicle1.name;
+const a = info[0].name;
 
 export const productData = [
   {
