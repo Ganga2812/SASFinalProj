@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/SASFinalProj/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/SASFinalProj/static/js/main.3216fc1b.chunk.js",
+    "main.js.map": "/SASFinalProj/static/js/main.3216fc1b.chunk.js.map",
+    "runtime-main.js": "/SASFinalProj/static/js/runtime-main.e9226a25.js",
+    "runtime-main.js.map": "/SASFinalProj/static/js/runtime-main.e9226a25.js.map",
+    "static/js/2.33019090.chunk.js": "/SASFinalProj/static/js/2.33019090.chunk.js",
+    "static/js/2.33019090.chunk.js.map": "/SASFinalProj/static/js/2.33019090.chunk.js.map",
+    "static/js/3.8725c0a4.chunk.js": "/SASFinalProj/static/js/3.8725c0a4.chunk.js",
+    "static/js/3.8725c0a4.chunk.js.map": "/SASFinalProj/static/js/3.8725c0a4.chunk.js.map",
+    "index.html": "/SASFinalProj/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/SASFinalProj/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.33019090.chunk.js.LICENSE.txt": "/SASFinalProj/static/js/2.33019090.chunk.js.LICENSE.txt",
+    "static/media/compact1.fbe3a4bd.png": "/SASFinalProj/static/media/compact1.fbe3a4bd.png",
+    "static/media/compact2.1b634437.png": "/SASFinalProj/static/media/compact2.1b634437.png",
+    "static/media/compact3.2e524814.png": "/SASFinalProj/static/media/compact3.2e524814.png",
+    "static/media/feat1.ab5b3167.jpg": "/SASFinalProj/static/media/feat1.ab5b3167.jpg",
+    "static/media/feat2.8c71c44c.jpg": "/SASFinalProj/static/media/feat2.8c71c44c.jpg",
+    "static/media/lux2.8c47b832.png": "/SASFinalProj/static/media/lux2.8c47b832.png",
+    "static/media/lux3.6aaa5857.png": "/SASFinalProj/static/media/lux3.6aaa5857.png",
+    "static/media/mid1.775d7811.png": "/SASFinalProj/static/media/mid1.775d7811.png",
+    "static/media/mid2.77df7477.png": "/SASFinalProj/static/media/mid2.77df7477.png",
+    "static/media/mid3.f9977eb6.png": "/SASFinalProj/static/media/mid3.f9977eb6.png",
+    "static/media/p1.8434f1c2.jpeg": "/SASFinalProj/static/media/p1.8434f1c2.jpeg",
+    "static/media/suv1.98be029b.png": "/SASFinalProj/static/media/suv1.98be029b.png",
+    "static/media/suv2.717aafd7.png": "/SASFinalProj/static/media/suv2.717aafd7.png",
+    "static/media/suv3.ff0c520b.png": "/SASFinalProj/static/media/suv3.ff0c520b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e9226a25.js",
+    "static/js/2.33019090.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.3216fc1b.chunk.js"
+  ]
+}
