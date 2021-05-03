@@ -19,7 +19,7 @@ class Login extends Component {
     render() {
 
     return(   
-        <form>
+        <>
             <h2>Sign-in Page</h2>
             <div>
                 <label>Email Address</label>
@@ -42,10 +42,10 @@ class Login extends Component {
                     <p>Have an account? <span><a onClick = {() => this.props.setHasAccount(!this.props.hasAccount)}>Login.</a></span></p>
                 </div>
             )}
-       </form> 
+       </>
     );
     }
     
 }
 
-export default Login
+export default Login;
