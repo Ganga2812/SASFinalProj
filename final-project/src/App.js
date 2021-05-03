@@ -12,6 +12,7 @@ function App() {
   const [password, setPassword] = useState('');
   const [hasAccount, setHasAccount] = useState(true);
 
+
   const loginHandler = () =>  {
     fire
       .auth()

@@ -10,17 +10,30 @@ import product9 from '../../images/mid3.png';
 import product10 from '../../images/lux2.png';
 import product11 from '../../images/lux3.png';
 import product12 from '../../images/feat2.jpg';
+import fire from '../../fire.js';
 
 
 
 import park1 from '../../images/p1.jpeg';
 
+function getData() {
+  fire.firestore().collection("Vehicles")
+    .get()
+    .then(querySnapshot => {
+    const data = querySnapshot.docs.map(doc => doc.data());
+    alert(data.toString())
+    return data;
+  });
+}
+
+const info = [] = getData();
+const a = info.vehicle1.name;
 
 export const productData = [
   {
     img: product1,
     alt: 'Car',
-    name: 'Cheverolet Equinox',
+    name: {a},
     category: 'SUV',
     price: '$19.99',
     button: 'Add to Cart'
