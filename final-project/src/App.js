@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import Login from './Login.js' 
 import fire from './fire.js';
+import Main from './Main.js';
+
 
 
 function App() {
@@ -12,38 +14,39 @@ function App() {
 
   const loginHandler = () =>  {
     fire
-        .auth()
-        .signInWithEmailAndPassword
-        .catch((err) => {
+      .auth()
+      .signInWithEmailAndPassword(email, password)
+      .catch((err) => {
             alert(err.message);
         });
-  }
+  };
 
   const signUpHandler = () => {
-    
     fire
       .auth()
       .createUserWithEmailAndPassword(email, password)
       .catch((err) => {
-          alert(err.message);
+        alert(err.message);
       });
-  }
+    fire.auth().signInWithEmailAndPassword(email, password)
+      
+  };
 
   const logoutHandler = () => {
     fire.auth().signOut();
-  }
+  };
 
   const authListener = () => {
     fire.auth().onAuthStateChanged((user) => {
       if(user) {
+        alert('test');
         clearValues();
         setUser(user);
       } else {
-        setUser('');
+        setUser("");
       }
-    })
-
-  }
+    });
+  };
   
   useEffect(() => {
     authListener();
@@ -52,22 +55,30 @@ function App() {
   const clearValues = () => {
     setEmail('');
     setPassword('');
-  }
+  };
     
 
 
   
   return (
-    <Login 
-      email = {email}
-      setEmail = {setEmail}
-      password = {password}
-      setPassword = {setPassword}
-      loginHandler = {loginHandler}
-      hasAccount = {hasAccount}
-      setHasAccount = {setHasAccount}
-      signUpHandler = {signUpHandler}
-    />
+    <div>
+      {user ? (
+        <Main 
+          logoutHandler = {logoutHandler}
+        />
+      ) : (
+        <Login 
+          email = {email}
+          setEmail = {setEmail}
+          password = {password}
+          setPassword = {setPassword}
+          loginHandler = {loginHandler}
+          hasAccount = {hasAccount}
+          setHasAccount = {setHasAccount}
+          signUpHandler = {signUpHandler}
+        />
+      )} 
+    </div>
   );
 }
 
