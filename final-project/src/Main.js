@@ -7,11 +7,9 @@ import { productData, productDataTwo } from './components/Products/data';
 import Feature from './components/Feature';
 import Footer from './components/Footer';
 
-const Main = ({logoutHandler, getData}) => {
+const Main = ({logoutHandler}) => {
     return(
         <div>
-            <h1>Hello There</h1>
-                <button onClick = {getData}>Data</button>
             <button onClick = {logoutHandler}>Log Out</button>
         <Router>
         <GlobalStyle />
