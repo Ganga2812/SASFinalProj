@@ -39,7 +39,6 @@ function App() {
   const authListener = () => {
     fire.auth().onAuthStateChanged((user) => {
       if(user) {
-        alert('test');
         clearValues();
         setUser(user);
       } else {
