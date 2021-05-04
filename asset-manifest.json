@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/SASFinalProj/static/css/main.c53eb538.chunk.css",
-    "main.js": "/SASFinalProj/static/js/main.3bf5486c.chunk.js",
-    "main.js.map": "/SASFinalProj/static/js/main.3bf5486c.chunk.js.map",
-    "runtime-main.js": "/SASFinalProj/static/js/runtime-main.828c6869.js",
-    "runtime-main.js.map": "/SASFinalProj/static/js/runtime-main.828c6869.js.map",
+    "main.css": "/SASFinalProj/static/css/main.c0e8905b.chunk.css",
+    "main.js": "/SASFinalProj/static/js/main.0fc968b9.chunk.js",
+    "main.js.map": "/SASFinalProj/static/js/main.0fc968b9.chunk.js.map",
+    "runtime-main.js": "/SASFinalProj/static/js/runtime-main.f920f77f.js",
+    "runtime-main.js.map": "/SASFinalProj/static/js/runtime-main.f920f77f.js.map",
     "static/css/2.727685ba.chunk.css": "/SASFinalProj/static/css/2.727685ba.chunk.css",
-    "static/js/2.58fdadba.chunk.js": "/SASFinalProj/static/js/2.58fdadba.chunk.js",
-    "static/js/2.58fdadba.chunk.js.map": "/SASFinalProj/static/js/2.58fdadba.chunk.js.map",
-    "static/js/3.fcea284b.chunk.js": "/SASFinalProj/static/js/3.fcea284b.chunk.js",
-    "static/js/3.fcea284b.chunk.js.map": "/SASFinalProj/static/js/3.fcea284b.chunk.js.map",
+    "static/js/2.1157dd3c.chunk.js": "/SASFinalProj/static/js/2.1157dd3c.chunk.js",
+    "static/js/2.1157dd3c.chunk.js.map": "/SASFinalProj/static/js/2.1157dd3c.chunk.js.map",
+    "static/js/3.fe578008.chunk.js": "/SASFinalProj/static/js/3.fe578008.chunk.js",
+    "static/js/3.fe578008.chunk.js.map": "/SASFinalProj/static/js/3.fe578008.chunk.js.map",
     "index.html": "/SASFinalProj/index.html",
     "static/css/2.727685ba.chunk.css.map": "/SASFinalProj/static/css/2.727685ba.chunk.css.map",
-    "static/css/main.c53eb538.chunk.css.map": "/SASFinalProj/static/css/main.c53eb538.chunk.css.map",
-    "static/js/2.58fdadba.chunk.js.LICENSE.txt": "/SASFinalProj/static/js/2.58fdadba.chunk.js.LICENSE.txt",
+    "static/css/main.c0e8905b.chunk.css.map": "/SASFinalProj/static/css/main.c0e8905b.chunk.css.map",
+    "static/js/2.1157dd3c.chunk.js.LICENSE.txt": "/SASFinalProj/static/js/2.1157dd3c.chunk.js.LICENSE.txt",
     "static/media/compact1.fbe3a4bd.png": "/SASFinalProj/static/media/compact1.fbe3a4bd.png",
     "static/media/compact2.1b634437.png": "/SASFinalProj/static/media/compact2.1b634437.png",
     "static/media/compact3.2e524814.png": "/SASFinalProj/static/media/compact3.2e524814.png",
@@ -27,13 +27,14 @@
     "static/media/p1.8434f1c2.jpeg": "/SASFinalProj/static/media/p1.8434f1c2.jpeg",
     "static/media/suv1.98be029b.png": "/SASFinalProj/static/media/suv1.98be029b.png",
     "static/media/suv2.717aafd7.png": "/SASFinalProj/static/media/suv2.717aafd7.png",
-    "static/media/suv3.ff0c520b.png": "/SASFinalProj/static/media/suv3.ff0c520b.png"
+    "static/media/suv3.ff0c520b.png": "/SASFinalProj/static/media/suv3.ff0c520b.png",
+    "static/media/vippark.87a344ba.jpg": "/SASFinalProj/static/media/vippark.87a344ba.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.828c6869.js",
+    "static/js/runtime-main.f920f77f.js",
     "static/css/2.727685ba.chunk.css",
-    "static/js/2.58fdadba.chunk.js",
-    "static/css/main.c53eb538.chunk.css",
-    "static/js/main.3bf5486c.chunk.js"
+    "static/js/2.1157dd3c.chunk.js",
+    "static/css/main.c0e8905b.chunk.css",
+    "static/js/main.0fc968b9.chunk.js"
   ]
 }
