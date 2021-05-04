@@ -13,7 +13,7 @@ import {
   ProductButton
 } from './ProductsElements';
 
-const Products = ({ heading, data, cart, setCart, check, setCheck, carType, setCartype }) => {
+const Products = ({ heading, data, cart, setCart, check, setCheck, carType, setCartype, parkingPrice, setParkingprice }) => {
   return (
     <ProductsContainer>
       <ProductsHeading>{heading}</ProductsHeading>
@@ -33,6 +33,7 @@ const Products = ({ heading, data, cart, setCart, check, setCheck, carType, setC
                   setCartype(product.name);
                 }else{
                   setCart(cart + product.cost);
+                  setParkingprice(product.cost)
                 } }} >{product.button}</ProductButton>
               </ProductInfo>
             </ProductCard>

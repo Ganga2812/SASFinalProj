@@ -14,8 +14,10 @@ const Main = ({logoutHandler}) => {
     const [cart, setCart] = useState(0);
     const [check, setCheck] = useState(false);
     const [carType, setCartype] = useState('none');
+    const [parkingPrice, setParkingprice] = useState(0);
     console.log(cart);
     console.log(carType);
+    console.log(parkingPrice);
 
     return (
         <div>
@@ -27,6 +29,8 @@ const Main = ({logoutHandler}) => {
               setCartype = {setCartype}
               check = {check}
               setCheck = {setCheck}
+              parkingPrice = {parkingPrice}
+              setParkingprice = {setParkingprice}
             />
           ) : (
             <div>
@@ -36,7 +40,7 @@ const Main = ({logoutHandler}) => {
             <Hero check={check} setCheck={setCheck}/>
             <Products heading='Pick Your Sweet Ride' data={productData} cart={cart} setCart={setCart} carType = {carType} setCartype={setCartype}/>
             <Feature />
-            <Products heading='Grab a Parking Spot' data={productDataTwo} cart={cart} setCart={setCart}/>
+            <Products heading='Grab a Parking Spot' data={productDataTwo} cart={cart} setCart={setCart} parkingPrice = {parkingPrice} setParkingprice = {setParkingprice}/>
             <Footer/>
             </Router>
             </div>
