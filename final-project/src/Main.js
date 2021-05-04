@@ -34,7 +34,6 @@ const Main = ({logoutHandler}) => {
             />
           ) : (
             <div>
-            <button onClick = {logoutHandler}>Log Out</button>
             <Router>
             <GlobalStyle />
             <Hero check={check} setCheck={setCheck}/>
@@ -43,6 +42,7 @@ const Main = ({logoutHandler}) => {
             <Products heading='Grab a Parking Spot' data={productDataTwo} cart={cart} setCart={setCart} parkingPrice = {parkingPrice} setParkingprice = {setParkingprice}/>
             <Footer/>
             </Router>
+            <button onClick = {logoutHandler}>Log Out</button>
             </div>
           )} 
         </div>

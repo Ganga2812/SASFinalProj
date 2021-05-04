@@ -33,7 +33,7 @@ const Products = ({ heading, data, cart, setCart, check, setCheck, carType, setC
                   setCartype(product.name);
                 }else{
                   setCart(cart + product.cost);
-                  setParkingprice(product.cost)
+                  setParkingprice(product.cost);
                 } }} >{product.button}</ProductButton>
               </ProductInfo>
             </ProductCard>
