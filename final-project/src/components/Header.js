@@ -7,7 +7,7 @@ export default function Header(props) {
         <h1>Shopping Cart</h1>
       </div>
       <div class="rightAlign">
-        <a href="././main.js">Back</a>
+        <a href="https://ganga2812.github.io/SASFinalProj/">Back</a>
       </div>
     </header>
   );
