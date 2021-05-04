@@ -1,47 +1,32 @@
 import Header from './components/Header';
 import Main from './components/Main';
 import Basket from './components/Basket';
-import data from './data';
 import { useState } from 'react';
-import React from 'react';
+import React from 'react'; 
+import PastPurchases from './components/PastPurchases';
 
-function Checkout() {
-  const { products } = data;
-  const [cartItems, setCartItems] = useState([]);
-  const onAdd = (product) => {
-    const exist = cartItems.find((x) => x.id === product.id);
-    if (exist) {
-      setCartItems(
-        cartItems.map((x) =>
-          x.id === product.id ? { ...exist, qty: exist.qty + 1 } : x
-        )
-      );
-    } else {
-      setCartItems([...cartItems, { ...product, qty: 1 }]);
-    }
-  };
-  const onRemove = (product) => {
-    const exist = cartItems.find((x) => x.id === product.id);
-    if (exist.qty === 1) {
-      setCartItems(cartItems.filter((x) => x.id !== product.id));
-    } else {
-      setCartItems(
-        cartItems.map((x) =>
-          x.id === product.id ? { ...exist, qty: exist.qty - 1 } : x
-        )
-      );
-    }
-  };
+function Checkout({cart, setCart, carType, setCarType, check, setCheck, parkingPrice, setParkingPrice, logoutHandler, user}) {
+
+  
+
+  console.log(prevItems)
+
   return (
     <div className="App">
-      <Header countCartItems={cartItems.length}></Header>
+      <Header></Header>
       <div className="row">
-        <Main products={products} onAdd={onAdd}></Main>
+        
         <Basket
-          cartItems={cartItems}
-          onAdd={onAdd}
-          onRemove={onRemove}
+          carType={carType}
+          cart={cart}
+          parkingPrice={parkingPrice}
+          logoutHandler = {logoutHandler}
+          user = {user}
+          prevItems={prevItems}
+          setPrevItems = {setPrevItems}
         ></Basket>
+        <PastPurchases prevItems={prevItems} setPrevItems={setPrevItems}></PastPurchases>
+
       </div>
     </div>
   );

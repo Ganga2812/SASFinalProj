@@ -11,6 +11,7 @@ function App() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [hasAccount, setHasAccount] = useState(true);
+  const [prevItems, setPrevItems] = useState("");
 
 
   const loginHandler = () =>  {
@@ -65,6 +66,7 @@ function App() {
       {user ? (
         <Main 
           logoutHandler = {logoutHandler}
+          user = {user}
         />
       ) : (
         <Login 

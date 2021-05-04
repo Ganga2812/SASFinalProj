@@ -4,20 +4,10 @@ export default function Header(props) {
   return (
     <header className="block row center">
       <div>
-        <a href="#/">
-          <h1>Small Shopping Cart</h1>
-        </a>
+        <h1>Shopping Cart</h1>
       </div>
-      <div>
-        <a href="#/cart">
-          Cart{' '}
-          {props.countCartItems ? (
-            <button className="badge">{props.countCartItems}</button>
-          ) : (
-            ''
-          )}
-        </a>{' '}
-        <a href="#/signin"> SignIn</a>
+      <div class="rightAlign">
+        <a href="././main.js">Back</a>
       </div>
     </header>
   );
