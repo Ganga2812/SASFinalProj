@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/SASFinalProj/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/SASFinalProj/static/js/main.3216fc1b.chunk.js",
-    "main.js.map": "/SASFinalProj/static/js/main.3216fc1b.chunk.js.map",
-    "runtime-main.js": "/SASFinalProj/static/js/runtime-main.e9226a25.js",
-    "runtime-main.js.map": "/SASFinalProj/static/js/runtime-main.e9226a25.js.map",
-    "static/js/2.33019090.chunk.js": "/SASFinalProj/static/js/2.33019090.chunk.js",
-    "static/js/2.33019090.chunk.js.map": "/SASFinalProj/static/js/2.33019090.chunk.js.map",
-    "static/js/3.8725c0a4.chunk.js": "/SASFinalProj/static/js/3.8725c0a4.chunk.js",
-    "static/js/3.8725c0a4.chunk.js.map": "/SASFinalProj/static/js/3.8725c0a4.chunk.js.map",
+    "main.css": "/SASFinalProj/static/css/main.c9c9882d.chunk.css",
+    "main.js": "/SASFinalProj/static/js/main.1e569c35.chunk.js",
+    "main.js.map": "/SASFinalProj/static/js/main.1e569c35.chunk.js.map",
+    "runtime-main.js": "/SASFinalProj/static/js/runtime-main.828c6869.js",
+    "runtime-main.js.map": "/SASFinalProj/static/js/runtime-main.828c6869.js.map",
+    "static/css/2.727685ba.chunk.css": "/SASFinalProj/static/css/2.727685ba.chunk.css",
+    "static/js/2.58fdadba.chunk.js": "/SASFinalProj/static/js/2.58fdadba.chunk.js",
+    "static/js/2.58fdadba.chunk.js.map": "/SASFinalProj/static/js/2.58fdadba.chunk.js.map",
+    "static/js/3.fcea284b.chunk.js": "/SASFinalProj/static/js/3.fcea284b.chunk.js",
+    "static/js/3.fcea284b.chunk.js.map": "/SASFinalProj/static/js/3.fcea284b.chunk.js.map",
     "index.html": "/SASFinalProj/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/SASFinalProj/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.33019090.chunk.js.LICENSE.txt": "/SASFinalProj/static/js/2.33019090.chunk.js.LICENSE.txt",
+    "static/css/2.727685ba.chunk.css.map": "/SASFinalProj/static/css/2.727685ba.chunk.css.map",
+    "static/css/main.c9c9882d.chunk.css.map": "/SASFinalProj/static/css/main.c9c9882d.chunk.css.map",
+    "static/js/2.58fdadba.chunk.js.LICENSE.txt": "/SASFinalProj/static/js/2.58fdadba.chunk.js.LICENSE.txt",
     "static/media/compact1.fbe3a4bd.png": "/SASFinalProj/static/media/compact1.fbe3a4bd.png",
     "static/media/compact2.1b634437.png": "/SASFinalProj/static/media/compact2.1b634437.png",
     "static/media/compact3.2e524814.png": "/SASFinalProj/static/media/compact3.2e524814.png",
@@ -28,9 +30,10 @@
     "static/media/suv3.ff0c520b.png": "/SASFinalProj/static/media/suv3.ff0c520b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e9226a25.js",
-    "static/js/2.33019090.chunk.js",
-    "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.3216fc1b.chunk.js"
+    "static/js/runtime-main.828c6869.js",
+    "static/css/2.727685ba.chunk.css",
+    "static/js/2.58fdadba.chunk.js",
+    "static/css/main.c9c9882d.chunk.css",
+    "static/js/main.1e569c35.chunk.js"
   ]
 }
