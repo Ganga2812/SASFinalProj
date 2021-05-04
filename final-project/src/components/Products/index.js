@@ -13,7 +13,7 @@ import {
   ProductButton
 } from './ProductsElements';
 
-const Products = ({ heading, data }) => {
+const Products = ({ heading, data, cart, setCart, check, setCheck, carType, setCartype }) => {
   return (
     <ProductsContainer>
       <ProductsHeading>{heading}</ProductsHeading>
@@ -27,7 +27,13 @@ const Products = ({ heading, data }) => {
                 <ProductTitle>{product.name}</ProductTitle>
                 <ProductDesc>{product.desc}</ProductDesc>
                 <ProductPrice>{product.price}</ProductPrice>
-                <ProductButton>{product.button}</ProductButton>
+                <ProductButton onClick = {() => {
+                if(heading == 'Pick Your Sweet Ride'){
+                  setCart(product.cost);
+                  setCartype(product.name);
+                }else{
+                  setCart(cart + product.cost);
+                } }} >{product.button}</ProductButton>
               </ProductInfo>
             </ProductCard>
           );

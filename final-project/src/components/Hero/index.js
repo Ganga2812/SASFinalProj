@@ -10,7 +10,7 @@ import {
   HeroBtn,
 } from './HeroElements';
 
-const Hero = () => {
+const Hero = ({check, setCheck}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -20,7 +20,7 @@ const Hero = () => {
   return (
     <HeroContainer>
       <Navbar toggle={toggle} />
-      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Sidebar isOpen={isOpen} toggle={toggle} check={check} setCheck={setCheck}/>
       <HeroContent>
         <HeroItems>
           <HeroH1>Best Car Rental Service in the World</HeroH1>

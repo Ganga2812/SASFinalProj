@@ -48,7 +48,7 @@ function getData(num, val){
 }
 
 console.log(getData(0,'name')); */
-
+export const totalCost = 0;
 
 export const productData = [
   {
@@ -181,6 +181,6 @@ export const productDataTwo = [
       'Our valet team will take care of your parking with best in class service. Park in the Luxury Heights exclusive parking garage.',
     price: '$'+ price_ + ' per hour',
     cost: price_,
-    button: 'Add to Cart and Checkout'
+    button: 'Add to Cart'
   }
 ];

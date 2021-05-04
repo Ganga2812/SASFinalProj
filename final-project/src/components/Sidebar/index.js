@@ -9,7 +9,7 @@ import {
   SideBtnWrap
 } from './SidebarElements';
 
-const Sidebar = ({ isOpen, toggle }) => {
+const Sidebar = ({ isOpen, toggle, check, setCheck }) => {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
@@ -23,7 +23,7 @@ const Sidebar = ({ isOpen, toggle }) => {
         <SidebarLink smooth to='#Parking'>Parking</SidebarLink>
       </SidebarMenu>
       <SideBtnWrap>
-        <SidebarRoute to='/'>View Cart and Checkout</SidebarRoute>
+        <SidebarRoute to='/' onClick = {() => setCheck(!check)}>View Cart and Checkout</SidebarRoute>
       </SideBtnWrap>
     </SidebarContainer>
   );
