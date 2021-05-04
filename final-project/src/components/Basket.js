@@ -18,11 +18,12 @@ export default function Basket(props) {
 
 
   function setData(){
-    setPrevItems(prevItems+" "+carType)
+    var str = prevItems + carType + ",";
+    console.log("str: " + str);
     fire.firestore().collection("Users").doc(fire.auth().currentUser.uid).set({
       Address: address,
       Name: names,
-      PastPurchases: prevItems,
+      PastPurchases: str,
       PhoneNumber: phoneNumber
   })
   }

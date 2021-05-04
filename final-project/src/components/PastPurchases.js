@@ -1,5 +1,7 @@
 import React from "react";
 import fire from '../fire.js';
+import 'react-credit-cards/es/styles-compiled.css';
+
 
 export default class PastPurchases extends React.Component {
 
@@ -9,6 +11,7 @@ export default class PastPurchases extends React.Component {
             prevItems,
             setPrevItems
         } = props;
+
     }
     
     state = {
@@ -28,10 +31,9 @@ export default class PastPurchases extends React.Component {
                     console.log("Smh what an L");
                 }
             })
-            this.props.setPrevItems( this.state.pastCops )
         }
         catch(err){}
-
+        
     }
     /*
     fire.firestore().collection("cities").doc("LA")
@@ -47,8 +49,11 @@ export default class PastPurchases extends React.Component {
 */
     render(){
         return(
+            
             <div>
-            <h1>Past Copps</h1>
+            {this.props.setPrevItems( this.state.pastCops )}
+            {console.log("set prevItems " + this.state.pastCops)}
+            <h1>Past Purchases</h1>
             <p>{this.state.pastCops}</p>
             </div>
         )

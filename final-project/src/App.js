@@ -67,6 +67,8 @@ function App() {
         <Main 
           logoutHandler = {logoutHandler}
           user = {user}
+          prevItems = {prevItems}
+          setPrevItems = {setPrevItems}
         />
       ) : (
         <Login 

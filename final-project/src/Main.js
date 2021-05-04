@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react';
 import Checkout from './Checkout';
 
 
-const Main = ({logoutHandler, user}) => {
+const Main = ({logoutHandler, user, prevItems, setPrevItems}) => {
     const [cart, setCart] = useState(0);
     const [check, setCheck] = useState(false);
     const [carType, setCartype] = useState('none');
@@ -33,6 +33,8 @@ const Main = ({logoutHandler, user}) => {
               setParkingprice = {setParkingprice}
               logoutHandler = {logoutHandler}
               user = {user}
+              prevItems = {prevItems}
+              setPrevItems = {setPrevItems}
             />
           ) : (
             <div>

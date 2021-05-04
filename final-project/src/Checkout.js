@@ -5,7 +5,7 @@ import { useState } from 'react';
 import React from 'react'; 
 import PastPurchases from './components/PastPurchases';
 
-function Checkout({cart, setCart, carType, setCarType, check, setCheck, parkingPrice, setParkingPrice, logoutHandler, user}) {
+function Checkout({cart, setCart, carType, setCarType, check, setCheck, parkingPrice, setParkingPrice, logoutHandler, user, prevItems, setPrevItems}) {
 
   
 
@@ -25,6 +25,8 @@ function Checkout({cart, setCart, carType, setCarType, check, setCheck, parkingP
           prevItems={prevItems}
           setPrevItems = {setPrevItems}
         ></Basket>
+        <br />
+        <br />
         <PastPurchases prevItems={prevItems} setPrevItems={setPrevItems}></PastPurchases>
 
       </div>
