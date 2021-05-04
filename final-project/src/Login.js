@@ -18,7 +18,12 @@ class Login extends Component {
 
     render() {
 
-    return(   
+    return( 
+        <div class="loginBg">
+            <div>
+                <h1></h1>
+            </div>
+        
         <div class="login">
             <h2>Sign-in Page</h2>
             <div>
@@ -42,6 +47,7 @@ class Login extends Component {
                     <p>Have an account? <span class="linkBox"><a onClick = {() => this.props.setHasAccount(!this.props.hasAccount)}>Login.</a></span></p>
                 </div>
             )}
+       </div>
        </div>
     );
     }
