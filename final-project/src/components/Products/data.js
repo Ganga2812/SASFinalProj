@@ -10,6 +10,7 @@ import product9 from '../../images/mid3.png';
 import product10 from '../../images/lux2.png';
 import product11 from '../../images/lux3.png';
 import product12 from '../../images/feat2.jpg';
+import park2 from '../../images/vippark.jpg';
 import fire from '../../fire.js';
 
 
@@ -160,16 +161,17 @@ export const productData = [
     button: 'Add to Cart'
   }
 ];
-
+const rem1 = Math.floor(Math.random() * 10) + 1;
 const rem = Math.floor(Math.random() * 10) + 1;
-function parkingCost(num){
+function parkingCost(num, rem_){
   let today = new Date();
   let hr = today.getHours();
   console.log(hr);
-  num += (hr + (10 - rem));
+  num += (hr + (10 - rem_));
   return num;
 }
-const price_ = parkingCost(3.00);
+const price_ = parkingCost(3.00,rem);
+const price_1 = parkingCost(30.00,rem1);
 console.log(price_);
 export const productDataTwo = [
   {
@@ -178,9 +180,21 @@ export const productDataTwo = [
     name: rem + '/10 spots remaining',
     category: 'Parking',
     desc:
-      'Our valet team will take care of your parking with best in class service. Park in the Luxury Heights exclusive parking garage.',
+      'Get access to one of the best parking garages. Floors 1-4 are available.',
     price: '$'+ price_ + ' per hour',
     cost: price_,
+    button: 'Add to Cart'
+  },
+
+  {
+    img: park2,
+    alt: 'Parking',
+    name: rem1 + '/10 spots remaining',
+    category: 'VIP Parking',
+    desc:
+      'Our valet team will take care of your parking with best in class service. Park in the Luxury Heights exclusive parking garage.',
+    price: '$'+ price_1 + ' per hour',
+    cost: price_1,
     button: 'Add to Cart'
   }
 ];
