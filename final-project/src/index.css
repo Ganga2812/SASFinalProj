@@ -1,4 +1,8 @@
 body {
+  background-image: url("./images/CarForBG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #72626259;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -11,7 +15,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
 h1,
 h2,
 h3 {
@@ -87,4 +90,21 @@ button.badge {
   color: #ffffff;
   width: 1.5rem;
 }
-
+.login{
+  background-color: rgb(37, 37, 37);
+  padding-bottom: 20px;
+  text-align: center;
+  border: 5px outset rgb(98, 34, 34);
+  color: #d42020;
+  width: 40%;
+  margin: auto;
+  margin-top: 20px;
+}
+.loginButton{
+  width: 9%;
+}
+.linkBox{
+  background-color: rgb(255, 255, 255);
+  padding: 3px;
+  border-radius: 0.5rem;
+}
