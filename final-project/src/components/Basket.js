@@ -4,7 +4,7 @@ import Cards from 'react-credit-cards';
 import 'react-credit-cards/es/styles-compiled.css';
 
 export default function Basket(props) {
-  const { carType, cart, parkingPrice, logoutHandler, user, prevItems, setPrevItems} = props;
+  const { carType, cart, parkingPrice, logoutHandler, user, prevItems, setPrevItems, setCart, setParkingPrice} = props;
 
   
   const [number, setNumber] = useState('');
@@ -15,6 +15,9 @@ export default function Basket(props) {
   const [address, setAddress] = useState('');
   const [pastPurchases, setPastPurchases] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
+  const [coupon, setCoupon] = useState('');
+  
+ 
 
 
   function setData(){
@@ -45,7 +48,6 @@ export default function Basket(props) {
                 <div className="col-2">Parking Price</div>
                 <div className="col-1 text-right">${parkingPrice.toFixed(2)}</div>
               </div>
-
               <div className="row">
                 <div className="col-2">
                   <strong>Total Price</strong>
@@ -56,6 +58,10 @@ export default function Basket(props) {
               </div>
               <hr />
               <div id="PaymentForm">
+              <input type="text" placeholder="Coupon" value={coupon} 
+                onChange={e => setCoupon(e.target.value)}
+                onFocus={e => setFocus(e.target.name)}
+                />
               <Cards
                 number={number}
                 name={names}
@@ -90,10 +96,15 @@ export default function Basket(props) {
                 />
               </form>
             </div>
-
-              <div className="row">
+                <div className="row">
                 <button onClick={() => {
                   setData();
+                  if(coupon == "GSU!") {
+                    alert("Coupon has been applied!");
+                    setCart(10.00);
+                  } else {
+                    alert("Coupon has been rejected!");
+                  }
                   alert("Your order has been confirmed");
                   }}>
                   Checkout

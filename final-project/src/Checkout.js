@@ -24,6 +24,8 @@ function Checkout({cart, setCart, carType, setCarType, check, setCheck, parkingP
           user = {user}
           prevItems={prevItems}
           setPrevItems = {setPrevItems}
+          setCart = {setCart}
+          setParkingPrice = {setParkingPrice}
         ></Basket>
         <br />
         <br />
