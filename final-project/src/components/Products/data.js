@@ -16,7 +16,7 @@ import fire from '../../fire.js';
 
 import park1 from '../../images/p1.jpeg';
 
-function getData() {
+/* function getData() {
   fire.firestore().collection("Vehicles")
     .get()
     .then(querySnapshot => {
@@ -27,15 +27,37 @@ function getData() {
 }
 
 const info = [] = getData();
-const a = info[0].name;
+const a = info[0].name; */
+
+/*const db = fire.firestore();
+db.collection('Vehicles').get().then((snapshot) => {
+  snapshot.docs.forEach(doc => {
+    console.log(doc.data().name)
+  })
+}); */
+
+/* const db = fire.firestore();
+
+function getData(num, val){
+  var value1 = "none";
+  db.collection('Vehicles').get().then((snapshot) => {
+    value1 = snapshot.docs[num].data()[val];
+    //console.log(snapshot.docs[num].data()[val]);
+  });
+  return value1;
+}
+
+console.log(getData(0,'name')); */
+
 
 export const productData = [
   {
     img: product1,
     alt: 'Car',
-    name: {a},
+    name: "Cheverolet Equinox",
     category: 'SUV',
-    price: '$19.99',
+    price: '$16.99',
+    cost: 16.99,
     button: 'Add to Cart'
   },
   {
@@ -44,6 +66,7 @@ export const productData = [
     name: 'Nissan Rogue',
     category: 'SUV',
     price: '$16.99',
+    cost: 16.99,
     button: 'Add to Cart'
   },
   {
@@ -51,7 +74,8 @@ export const productData = [
     alt: 'Car',
     name: 'Toyota RAV4',
     category: 'SUV',
-    price: '$14.99',
+    price: '$16.99',
+    cost: 16.99,
     button: 'Add to Cart'
   },
   {
@@ -59,7 +83,8 @@ export const productData = [
     alt: 'Car',
     name: 'Toyota Prius',
     category: 'Compact',
-    price: '$14.99',
+    price: '$11.99',
+    cost: 11.99,
     button: 'Add to Cart'
   },
   {
@@ -67,7 +92,8 @@ export const productData = [
     alt: 'Car',
     name: 'Chevrolet Cruze',
     category: 'Compact',
-    price: '$19.99',
+    price: '$11.99',
+    cost: 11.99,
     button: 'Add to Cart'
   },
   {
@@ -75,7 +101,8 @@ export const productData = [
     alt: 'Car',
     name: 'Kia Soul',
     category: 'Compact',
-    price: '$16.99',
+    price: '$11.99',
+    cost: 11.99,
     button: 'Add to Cart'
   },
   {
@@ -84,6 +111,7 @@ export const productData = [
     name: 'Honda Accord',
     category: 'Midsize',
     price: '$14.99',
+    cost: 14.99,
     button: 'Add to Cart'
   },
   {
@@ -92,6 +120,7 @@ export const productData = [
     name: 'Toyota Camry',
     category: 'Midsize',
     price: '$14.99',
+    cost: 14.99,
     button: 'Add to Cart'
   },
   {
@@ -99,7 +128,8 @@ export const productData = [
     alt: 'Car',
     name: 'Ford Fusion',
     category: 'Midsize',
-    price: '$19.99',
+    price: '$14.99',
+    cost: 14.99,
     button: 'Add to Cart'
   },
   {
@@ -107,7 +137,8 @@ export const productData = [
     alt: 'Car',
     name: 'Mercedes-Benz GLE',
     category: 'Luxury',
-    price: '$16.99',
+    price: '$29.99',
+    cost: 29.99,
     button: 'Add to Cart'
   },
   {
@@ -115,7 +146,8 @@ export const productData = [
     alt: 'Car',
     name: 'Audi A8',
     category: 'Luxury',
-    price: '$14.99',
+    price: '$29.99',
+    cost: 29.99,
     button: 'Add to Cart'
   },
   {
@@ -123,20 +155,32 @@ export const productData = [
     alt: 'Car',
     name: 'BMW 5 Series',
     category: 'Luxury',
-    price: '$14.99',
+    price: '$29.99',
+    cost: 29.99,
     button: 'Add to Cart'
   }
 ];
 
+const rem = Math.floor(Math.random() * 10) + 1;
+function parkingCost(num){
+  let today = new Date();
+  let hr = today.getHours();
+  console.log(hr);
+  num += (hr + (10 - rem));
+  return num;
+}
+const price_ = parkingCost(3.00);
+console.log(price_);
 export const productDataTwo = [
   {
     img: park1,
     alt: 'Parking',
-    name: '1st Class Parking',
+    name: rem + '/10 spots remaining',
     category: 'Parking',
     desc:
-      'Our valet services will take care of your parking. Park in the Luxury Heights exclusive parking garage.',
-    price: '$12.99',
+      'Our valet team will take care of your parking with best in class service. Park in the Luxury Heights exclusive parking garage.',
+    price: '$'+ price_ + ' per hour',
+    cost: price_,
     button: 'Add to Cart and Checkout'
   }
 ];
